@@ -8,56 +8,21 @@
     <link rel="stylesheet" href="https://use.typekit.net/zfo4oyp.css">
     <meta property="og:image" content="{{ url_for(filename='imagens/seo.jpg') }}">
     <title>Convite Online - Lucca 5 anos</title>
-    <script>
-        const scriptURL = "https://script.google.com/macros/s/AKfycbx6y2w2oYJED2aN-bS27eYyk_IZPqLyXPaWtRBzqqzWeB49teE0QhOC_VX6TtMgOmKu/exec";
-
-        async function submitForm(event) {
-            event.preventDefault();
-
-            // Obtenha o formulário e seus dados
-            const form = document.querySelector(".form");
-            const formData = new FormData(form);
-
-            // Converta os dados para JSON
-            const data = Object.fromEntries(formData);
-
-            console.log("Dados enviados:", data);
-
-            try {
-                const response = await fetch(scriptURL, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(data),
-                });
-
-                if (response.ok) {
-                    alert("Dados enviados com sucesso!");
-                } else {
-                    alert("Erro ao enviar os dados!");
-                }
-            } catch (error) {
-                console.error("Erro:", error);
-                alert("Erro ao enviar os dados!");
-            }
-        }
-    </script>
 </head>
 
 <body>
     <div class="modalforms">
-        <form class="form" onsubmit="submitForm(event)">
+        <form method="post" class="form" action="" name="formulario-participantes">
             <label class="label" for="nome">Nome completo:</label>
-            <input id="nome" name="nome" type="text" class="input">
+            <input id="nome" placeholder="NOME" name="nome" type="text" class="input">
     
             <label class="label" for="email">E-mail:</label>
-            <input id="email" name="email" type="email" class="input">
+            <input id="email" placeholder="E-MAIL" name="email" type="email" class="input">
     
             <label class="label" for="telefone">Telefone:</label>
-            <input id="telefone" name="telefone" type="tel" class="input">
+            <input id="telefone" placeholder="TELEFONE" name="telefone" type="tel" class="input">
     
-            <button id="submit" type="submit">CONFIRMAR</button>
+            <button id="submit" value="CONFIRMAR" type="submit">CONFIRMAR</button>
         </form>
     </div>
     <div class="modalrodape">
