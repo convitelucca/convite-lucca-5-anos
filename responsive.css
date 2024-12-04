@@ -1,0 +1,39 @@
+@media (max-width: 480px) {
+
+.cat{
+    font-size: 22px;
+}
+
+.iconcat{
+    width: 30px;
+}
+
+#countdown{
+    width: 90%;
+}
+
+#countdown #tiles > span{
+    width: 60px;
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+#countdown .labels{
+    bottom: 40px;
+}
+
+#countdown .labels li{
+    width: 70px;
+    font-size: 12px;
+}
+
+.daybutton{
+    width: 80%;
+}
+
+.fechar{
+    width: 50px;
+    right: 25px;
+}
+
+}
