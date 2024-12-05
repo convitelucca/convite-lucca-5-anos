@@ -13,18 +13,20 @@
 }
 
 #countdown #tiles > span{
-    width: 60px;
-    font-size: 28px;
+    width: 65px;
+    font-size: 40px;
     padding: 10px 0;
 }
 
 #countdown .labels{
-    bottom: 40px;
+    bottom: 30px;
 }
 
 #countdown .labels li{
-    width: 70px;
-    font-size: 12px;
+    width: 77px;
+    font-size: 22px;
+    color: #811212;
+    text-shadow: none;
 }
 
 .daybutton{
@@ -32,13 +34,18 @@
 }
 
 .fechar{
-    width: 50px;
+    width: 150px;
     right: 25px;
 }
 
 .bodytext{
     font-size: 20px;
     text-align: center;
+}
+
+#bgfundo{
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 }

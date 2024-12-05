@@ -7,6 +7,8 @@ buttonRodape.addEventListener('click', () => {
     modalConfirmar.classList.add('modal-in')
     modalConfirmar.style.display = 'block'; // Define o modal como visível
     document.body.style.overflow = 'hidden'
+    fecharButton.classList.remove('fechar-out')
+    fecharButton.classList.add('fechar-in') 
 });
 
 const fecharButton = document.querySelector('.fechar')
@@ -14,6 +16,8 @@ const fecharButton = document.querySelector('.fechar')
 fecharButton.addEventListener('click', () => {
     modalConfirmar.classList.remove('modal-in')
     modalConfirmar.classList.add('modal-out')
+    fecharButton.classList.remove('fechar-in')
+    fecharButton.classList.add('fechar-out') 
     setTimeout(() => {
         modalConfirmar.style.display = 'none'
         document.body.style.overflow = 'auto'
