@@ -11,6 +11,7 @@ body{
     box-sizing: border-box;
     text-align: center;
     font-family: kaneda-gothic;
+    display: block;
 }
 
 .modalforms{
@@ -195,11 +196,13 @@ iframe.forms-google::-webkit-scrollbar {
 }
 
 .bodytext{
+    width: 90%;
     font-size: 26px;
     font-weight: 500;
     text-align: left;
     max-width: 800px;
     color: white;
+    padding: 0px 20px;
 }
 
 .subtitle{
@@ -245,10 +248,11 @@ iframe.forms-google::-webkit-scrollbar {
 }
 
 .localtext{
-    font-size: 24px;
+    font-size: 22px;
     text-transform: uppercase;
     font-weight: 500;
     color: #e22524;
+    margin-right: 10px;
 }
 
 #icons{
@@ -276,6 +280,8 @@ iframe.forms-google::-webkit-scrollbar {
     max-height: 400px;
     border-radius: 35px;
     margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 #regressiva{
@@ -408,6 +414,10 @@ iframe.forms-google::-webkit-scrollbar {
     height: 150px;
     width: 100%;
 
+}
+
+.containerbgfinal{
+    width: 105%;
 }
 
 #bgfundo{
