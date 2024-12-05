@@ -12,6 +12,13 @@
     width: 90%;
 }
 
+#countdown #tiles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 #countdown #tiles > span{
     width: 65px;
     font-size: 40px;
@@ -24,9 +31,11 @@
 
 #countdown .labels li{
     width: 77px;
-    font-size: 22px;
+    font-size: 18px;
     color: #811212;
     text-shadow: none;
+    
+    
 }
 
 .daybutton{
@@ -46,6 +55,15 @@
 #bgfundo{
     width: 100%;
     margin-bottom: 50px;
+
 }
 
+}
+
+@media (max-width: 350px) {
+    #countdown .labels li{
+        width: 24%;
+        font-size: 18px;    
+        
+    }
 }

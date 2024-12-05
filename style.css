@@ -336,6 +336,7 @@ iframe.forms-google::-webkit-scrollbar {
 #countdown #tiles{
     position: relative;
     z-index: 1;
+    
 }
 
 #countdown #tiles > span{
@@ -357,6 +358,7 @@ iframe.forms-google::-webkit-scrollbar {
     padding: 10px 0;
     display: inline-block;
     position: relative;
+    
 }
 
 #countdown #tiles > span:before{
